@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.4rem;
+}
+
+a:any-link {
+    color: var(--C-LINK);
+}
+
+a:hover, a:focus {
+    color: var(--C-LINKH);
+}
+/* || RESET */
+
+/* VARIABLES */
+
+:root {
+
+    /* COLORS */
+
+    --BGC-BODY: #2D3142;
+    --C-BODY:  #FFFFFF;
+    --BGC-HEADER: #131112;
+    --C-HEADER: #FFFFFF;
+    --C-LINK: #DBFEB8; 
+    --C-LINKH: #F9D4BB;
+    --BGC-MAIN: #131B23;
+    --BGC-TABLE: #53131E;
+
+    /* LINEAR-GRADIENT */
+
+    --HBG-LGRAD: linear-gradient(90deg, hsla(267, 80%, 18%, 0.356) 10%, #000000);
+    --BG-LGRAD: linear-gradient(hsla(283, 81%, 18%, 0.356) 10%, #381a37);
+
+    /* PADDING */
+    --P-GEN: 10px;
+
+    /* SHADOW */
+    --BX-SHADOW: 0px 0px 3px 3px white;
+
+}
+
+/* || VARIABLES */
+
+/* UTILITY */
+
+.tiny-text {
+    font-size: 0.5rem;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+/* || UTILITY */
+
+
+/* BODY */
+
+body {
+    background-color: var(--BGC-BODY);
+    color: var(--C-BODY);
+    background-image: var(--BG-LGRAD);
+    position: relative;
+}
+
+main {
+    background-color: var(--BGC-MAIN);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: min(70%, 900px);
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: var(--BX-SHADOW);
+    padding-top: 8rem;
+}
+
+figure {
+    padding: 1rem;
+}
+
+/* BODY */
+
+/* H2 H3 P */
+
+h2, h3, p {
+    padding: var(--P-GEN);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn {
+    margin: 2rem auto;
+}
+
+.main__description {
+    padding-bottom: 2rem;
+}
+
+/* LISTS */
+
+
+
+.recipes__ul, .recipes__ol-steps, .recipes__ol {
+    padding: 1rem 3rem;
+}
+
+.recipes__li {
+    padding: 0.3rem;
+}
+
+.step {
+    counter-increment: section;
+    list-style-type: none;
+}
+.recipes__ol-steps li::before {
+    content: "Step " counter(section);
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* || LISTS */
+
+/* GRID */
+
+thead, tbody, tr {
+    display: contents;
+}
+
+.recipes__grid {
+    background-color: var(--BGC-TABLE);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+/*     grid-template-areas: 
+                        "th th th th"
+                        "td td td td"; */
+    gap: 0.5rem;
+}
+
+.recipes__grid-more {
+    background-color: var(--BGC-TABLE);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+/*     grid-template-areas: 
+                        "th th th th"
+                        "td td td td"; */
+    gap: 0.5rem;
+}
+
+th, td {
+    display: grid;
+    place-content: center;
+}
+
+tfoot {
+    display: grid;
+    place-content: center;
+    grid-column: span 4;
+}
+
+.jump {
+    padding: var(--P-GEN);
+}
+
+/* || GRID */
+
+/* || H2 H3 P */
+
+/* HEADER */
+
+header {
+    background-color: var(--BGC-HEADER);
+    color: var(--C-HEADER);
+    background-image: var(--HBG-LGRAD);
+    min-width: min(100%, 350px);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem 3rem;
+    column-gap: 6rem;
+    box-shadow: var(--BX-SHADOW);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
+.recipes__header {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.main__ul {
+    display: flex; 
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+
+@media screen and (max-width:729px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        min-width: 100%;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:640px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    main {
+        min-width: 100%;
+    }
+} 
+
+/* || HEADER */
+
+/* FOOTER */
+
+footer {
+    background-color: var(--BGC-HEADER);
+    color: var(--C-HEADER);
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    width: 100%;
+    box-shadow: var(--BX-SHADOW);
+}
+
+/* FOOTER */

@@ -1,75 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="DarkestofTimes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DarkestofTimes" />
     <title>Recipes Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Odin Recipes</h1>
-        <nav>
-            <ul>
-                <li><a class="nav__link" href="#shrimp">Spicy Grilled Shrimp</a></li>
-                <li><a class="nav__link" href="#grilled-cheese">Smashed Peach and Poblano Grilled Cheese</a></li>
-                <li><a class="nav__link" href="#rainbow">Rainbow Citrus Cake</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="header__main">
+      <h1 class="nowrap">Odin Recipes</h1>
+      <nav>
+        <ul class="main__ul">
+          <li><a class="nav__link" href="#shrimp">Spicy Grilled Shrimp</a></li>
+          <li>
+            <a class="nav__link" href="#grilled-cheese"
+              >Smashed Peach and Poblano Grilled Cheese</a
+            >
+          </li>
+          <li><a class="nav__link" href="#rainbow">Rainbow Citrus Cake</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="welcome" class="welcome">
-            <h2 class="welcome__h2">Welcome to my random recipes page!</h2>
-            <p class="welcome__p">Those delicious creations were picked at random from <a class="main__link" href="https://www.allrecipes.com/" target="_blank">Allrecipes.com</a>. This page only serves purpose of practicing, but the recipes are real. Try them if you'd like. </p>
-        </section>
+      <section id="welcome" class="welcome">
+        <h2 class="welcome__h2">Welcome to my random recipes page!</h2>
+        <p class="welcome__p">
+          Those delicious creations were picked at random from
+          <a class="main__a" href="https://www.allrecipes.com/" target="_blank"
+            >Allrecipes.com</a
+          >. This page only serves purpose of practicing, but the recipes are
+          real. Try them if you'd like.
+        </p>
+      </section>
 
-        <!-- first recipe -->
+      <!-- first recipe -->
 
-        <section class="main__container" id="shrimp">
-            <h2 class="main__h2">Spicy Grilled Shrimp</h2>
-            <figure class="main__figure">
-                <a class="main__link" href="recipes/grilled-shrimp.html" target="_blank">
-                    <img class="main__img" src="img/shrimp.webp" alt="Grilled shrimps on a plate" width="400" height="400" loading="lazy">
-                </a>
-                <figcaption class="figcaption">Spicy Grilled Shrimp</figcaption>
-            </figure>
-            <p class="main__description">This grilled shrimp recipe is fast and easy to prepare and destined to be the hit of any barbeque. And, weather not permitting, the shrimp cook up great under the broiler, too.</p>
-        </section>
+      <section class="main__container" id="shrimp">
+        <h2 class="main__h2">Spicy Grilled Shrimp</h2>
+        <figure class="main__figure">
+          <a
+            class="main__link"
+            href="recipes/grilled-shrimp.html"
+            target="_blank"
+          >
+            <img
+              class="main__img"
+              src="img/shrimp.webp"
+              alt="Grilled shrimps on a plate"
+              width="350"
+              height="350"
+              loading="lazy"
+            />
+          </a>
+          <figcaption class="figcaption">Spicy Grilled Shrimp</figcaption>
+        </figure>
+        <p class="main__description">
+          This grilled shrimp recipe is fast and easy to prepare and destined to
+          be the hit of any barbeque. And, weather not permitting, the shrimp
+          cook up great under the broiler, too.
+        </p>
+      </section>
 
-        <!-- second recipe -->
+      <!-- second recipe -->
 
-        <section class="main__container" id="grilled-cheese">
-            <h2 class="main__h2">Smashed Peach and Poblano Grilled Cheese</h2>
-            <figure class="main__figure">
-                <a class="main__link" href="recipes/smashed-peachand-poblano-grilled-cheese.html" target="_blank">
-                    <img class="main__img" src="img/sandwich.webp" alt="Grilled cheese sandwich on a plate" width="400" height="400" loading="lazy">
-                </a>
-                <figcaption class="figcaption">Smashed Peach and Poblano Grilled Cheese</figcaption>
-            </figure>
-            <p class="main__description">For a spicy-sweet take on grilled cheese, layer roasted poblanos and smashed peach slices with Cheddar and bacon.</p>
-        </section>
+      <section class="main__container" id="grilled-cheese">
+        <h2 class="main__h2">Smashed Peach and Poblano Grilled Cheese</h2>
+        <figure class="main__figure">
+          <a
+            class="main__link"
+            href="recipes/smashed-peachand-poblano-grilled-cheese.html"
+            target="_blank"
+          >
+            <img
+              class="main__img"
+              src="img/sandwich.webp"
+              alt="Grilled cheese sandwich on a plate"
+              width="350"
+              height="350"
+              loading="lazy"
+            />
+          </a>
+          <figcaption class="figcaption">
+            Smashed Peach and Poblano Grilled Cheese
+          </figcaption>
+        </figure>
+        <p class="main__description">
+          For a spicy-sweet take on grilled cheese, layer roasted poblanos and
+          smashed peach slices with Cheddar and bacon.
+        </p>
+      </section>
 
-        <!-- third recipe -->
+      <!-- third recipe -->
 
-        <section class="main__container" id="rainbow">
-            <h2 class="main__h2">Rainbow Citrus Cake</h2>
-            <figure class="main__figure">
-                <a class="main__link" href="recipes/rainbow-citrus-cake.html" target="_blank">
-                    <img class="main__img" src="img/cake.webp" alt="Tri-color cake on a plate" width="400" height="400" loading="lazy">
-                </a>
-                <figcaption class="figcaption">Rainbow Citrus Cake</figcaption>
-            </figure>
-            <p class="main__description">Tri-colored cake with a lemon layer, lime layer and an orange layer. The filling is a lemon curd and the frosting is orange.</p>
-        </section>
+      <section class="main__container" id="rainbow">
+        <h2 class="main__h2">Rainbow Citrus Cake</h2>
+        <figure class="main__figure">
+          <a
+            class="main__link"
+            href="recipes/rainbow-citrus-cake.html"
+            target="_blank"
+          >
+            <img
+              class="main__img"
+              src="img/cake.webp"
+              alt="Tri-color cake on a plate"
+              width="350"
+              height="350"
+              loading="lazy"
+            />
+          </a>
+          <figcaption class="figcaption">Rainbow Citrus Cake</figcaption>
+        </figure>
+        <p class="main__description">
+          Tri-colored cake with a lemon layer, lime layer and an orange layer.
+          The filling is a lemon curd and the frosting is orange.
+        </p>
+      </section>
 
-        <a href="#">Back to Top</a>
-
+      <a class="btn" href="#">Back to Top</a>
     </main>
     <footer>
-        <p>Put together by <a class="github-link" href="https://github.com/DarkestofTimes" target="_blank">DarkestofTimes</a>.</p>
-        <p>Content shamelessly copied from <a class="allrecipes" href="https://www.allrecipes.com/" target="_blank">Allrecipes.com</a>.</p>
+      <p>
+        Put together by
+        <a
+          class="github-link"
+          href="https://github.com/DarkestofTimes"
+          target="_blank"
+          >DarkestofTimes</a
+        >.
+      </p>
+      <p>
+        Content shamelessly copied from
+        <a class="allrecipes" href="https://www.allrecipes.com/" target="_blank"
+          >Allrecipes.com</a
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

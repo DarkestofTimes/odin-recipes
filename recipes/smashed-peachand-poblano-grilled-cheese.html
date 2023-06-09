@@ -1,113 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="DarkestofTimes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DarkestofTimes" />
     <title>Spicy Grilled Shrimp</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Smashed Peach and Poblano Grilled Cheese</h1>
-        <nav>
-            <ul>
-                <li><a class="nav__link" href="../index.html">Home</a></li>
-                <li><a class="nav__link" href="#ingredients">Ingredients</a></li>
-                <li><a class="nav__link" href="#steps">Steps</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="recipes__header">
+      <h1>Smashed Peach and Poblano Grilled Cheese</h1>
+      <nav>
+        <ul>
+          <li><a class="nav__link" href="../index.html">Home</a></li>
+          <li><a class="nav__link" href="#ingredients">Ingredients</a></li>
+          <li><a class="nav__link" href="#steps">Steps</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        
+      <!-- here goes the picture and initial description -->
 
-        <!-- here goes the picture and initial description -->
-
-        <section class="recipes__head">
-            <h2 class="recipes__h2">Smashed Peach and Poblano Grilled Cheese</h2>
-            <p class="recipes__p">For a spicy-sweet take on grilled cheese, layer roasted poblanos and smashed peach slices with Cheddar and bacon.</p>
-            <figure class="recipes__figure">
-                <img class="recipes__img" src="../img/sandwich.webp" alt="Grilled cheese sandwich on a plate" width="400" height="400" loading="lazy">
-                <figcaption class="recipes__figcaption">Smashed Peach and Poblano Grilled Cheese</figcaption>
-            </figure>
+      <section class="recipes__head">
+        <h2 class="recipes__h2">Smashed Peach and Poblano Grilled Cheese</h2>
+        <p class="recipes__p">
+          For a spicy-sweet take on grilled cheese, layer roasted poblanos and
+          smashed peach slices with Cheddar and bacon.
+        </p>
+        <figure class="recipes__figure">
+          <img
+            class="recipes__img"
+            src="../img/sandwich.webp"
+            alt="Grilled cheese sandwich on a plate"
+            width="400"
+            height="400"
+            loading="lazy"
+          />
+          <figcaption class="recipes__figcaption">
+            Smashed Peach and Poblano Grilled Cheese
+          </figcaption>
+        </figure>
 
         <!-- here goes general tablet o7 -->
 
         <table class="recipes__grid">
+          <tr>
+            <th>Prep Time:</th>
+            <th>Cook Time:</th>
+            <th>Total Time:</th>
+            <th>Yield:</th>
+          </tr>
+          <tr>
+            <td>15 min</td>
+            <td>5 min</td>
+            <td>20 min</td>
+            <td>2 Sandwiches</td>
+          </tr>
+          <tfoot>
             <tr>
-              <th>Prep Time:</th>
-              <th>Cook Time:</th>
-              <th>Total Time:</th>
-              <th>Yield:</th>
+              <td class="jump">
+                <a href="#nutrition">Jump to Nutrition Facts</a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- here goes list of ingredients -->
+
+      <section class="recipes__prep" id="ingredients">
+        <div>
+          <h2 class="recipes__h2">Ingredients</h2>
+          <ul class="recipes__ul">
+            <li class="recipes__li">2 peaches, halved</li>
+            <li class="recipes__li">
+              1/2 teaspoon ground ancho chile pepper (optional)
+            </li>
+            <li class="recipes__li">4 slices sourdough bread</li>
+            <li class="recipes__li">
+              3 ounces sliced sharp white Cheddar cheese
+            </li>
+            <li class="recipes__li">
+              1 large poblano pepper, roasted and cut into strips
+            </li>
+            <li class="recipes__li">2 tablespoons butter, softened</li>
+            <li class="recipes__li">4 slices crisp-cooked bacon</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- here goes step by step process description -->
+
+      <section class="recipes__prep" id="steps">
+        <div>
+          <h2 class="recipes__h2">Directions</h2>
+          <ol class="recipes__ol-steps">
+            <li class="recipes__li step">
+              Sprinkle cut sides of peach halves with ground chile (if using).
+              Using a potato masher, a flat-bottom heavy skillet, or the flat
+              side of a meat mallet, gently smash peach halves to 1/2-inch
+              thickness.
+            </li>
+            <li class="recipes__li step">
+              Top 2 bread slices with Cheddar cheese. Layer 2 peach halves, half
+              of the poblano strips, and 2 slices bacon on top of the cheese.
+              Top with remaining bread slices. Butter both sides of each
+              sandwich.
+            </li>
+            <li class="recipes__li step">
+              Heat a skillet over medium heat. Add sandwiches and cook, turning
+              halfway through, until bread is toasted and cheese melts, 4 to 6
+              minutes.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="recipes__prep" id="nutrition">
+        <div>
+          <h2 class="recipes__h2">
+            Nutrition Facts <span class="tiny-text">(per serving)</span>
+          </h2>
+          <table class="recipes__grid">
+            <tr>
+              <th>Calories</th>
+              <th>Fat</th>
+              <th>Carbs</th>
+              <th>Proteins</th>
             </tr>
             <tr>
-              <td>15 min</td>
-              <td>5 min</td>
-              <td>20 min</td>
-              <td>2 Sandwiches</td>
+              <td>850</td>
+              <td>32g</td>
+              <td>104g</td>
+              <td>45g</td>
             </tr>
           </table>
-          <p><a href="#nutrition">Jump to Nutrition Facts</a></p>     
-        </section>
+        </div>
+      </section>
 
-        <!-- here goes list of ingredients -->
-
-        <section class="recipes__prep" id="ingredients">
-            <div>
-                <h2 class="recipes__h2">Ingredients</h2>
-                <ul class="recipes__ul">
-                    <li class="recipes__li">2 peaches, halved</li>
-                    <li class="recipes__li">1/2 teaspoon ground ancho chile pepper (optional)</li>
-                    <li class="recipes__li">4 slices sourdough bread</li>
-                    <li class="recipes__li">3 ounces sliced sharp white Cheddar cheese</li>
-                    <li class="recipes__li">1 large poblano pepper, roasted and cut into strips</li>
-                    <li class="recipes__li">2 tablespoons butter, softened</li>
-                    <li class="recipes__li">4 slices crisp-cooked bacon</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- here goes step by step process description -->
-
-        <section class="recipes__prep" id="steps">
-            <div>
-                <h2 class="recipes__h2">Directions</h2>
-                <ol class="recipes__ol-steps">
-                    <li class="recipes__li">Sprinkle cut sides of peach halves with ground chile (if using). Using a potato masher, a flat-bottom heavy skillet, or the flat side of a meat mallet, gently smash peach halves to 1/2-inch thickness. 
-                    </li>
-                    <li class="recipes__li">  
-                        Top 2 bread slices with Cheddar cheese. Layer 2 peach halves, half of the poblano strips, and 2 slices bacon on top of the cheese. Top with remaining bread slices. Butter both sides of each sandwich. </li>
-                    <li class="recipes__li">Heat a skillet over medium heat. Add sandwiches and cook, turning halfway through, until bread is toasted and cheese melts, 4 to 6 minutes. </li>
-                </ol>
-            </div>
-        </section>
-        <section class="recipes__prep" id="nutrition">
-            <div>
-                <h2 class="recipes__h2">Nutrition Facts <span class="tiny-text">(per serving)</span></h2>
-                <table class="recipes__grid">
-                    <tr>
-                    <th>Calories</th>
-                    <th>Fat</th>
-                    <th>Carbs</th>
-                    <th>Proteins</th>
-                    </tr>
-                    <tr>
-                    <td>850</td>
-                    <td>32g</td>
-                    <td>104g</td>
-                    <td>45g</td>
-                    </tr>
-                </table> 
-            </div>            
-            </section>
-
-            <a href="#">Back to Top</a>
-
+      <a class="btn" href="#">Back to Top</a>
     </main>
     <footer>
-        <p>Put together by <a class="github-link" href="https://github.com/DarkestofTimes" target="_blank">DarkestofTimes</a>.</p>
-        <p>Content shamelessly copied from <a class="allrecipes" href="https://www.allrecipes.com/" target="_blank">Allrecipes.com</a>.</p>
+      <p>
+        Put together by
+        <a
+          class="github-link"
+          href="https://github.com/DarkestofTimes"
+          target="_blank"
+          >DarkestofTimes</a
+        >.
+      </p>
+      <p>
+        Content shamelessly copied from
+        <a class="allrecipes" href="https://www.allrecipes.com/" target="_blank"
+          >Allrecipes.com</a
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

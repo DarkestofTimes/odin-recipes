@@ -1,134 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="DarkestofTimes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DarkestofTimes" />
     <title>Rainbow Citrus Cake</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Rainbow Citrus Cake</h1>
-        <nav>
-            <ul>
-                <li><a class="nav__link" href="../index.html">Home</a></li>
-                <li><a class="nav__link" href="#ingredients">Ingredients</a></li>
-                <li><a class="nav__link" href="#steps">Steps</a></li>
-                <li><a class="nav__link" href="#extra">Extra</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header class="recipes__header">
+      <h1 class="nowrap">Rainbow Citrus Cake</h1>
+      <nav>
+        <ul>
+          <li><a class="nav__link" href="../index.html">Home</a></li>
+          <li><a class="nav__link" href="#ingredients">Ingredients</a></li>
+          <li><a class="nav__link" href="#steps">Steps</a></li>
+          <li><a class="nav__link" href="#extra">Extra</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <!-- here goes the picture and initial description -->
 
-        <!-- here goes the picture and initial description -->
-
-        <section class="recipes__head">
-            <h2 class="recipes__h2">Rainbow Citrus Cake</h2>
-            <p class="recipes__p">Tri-colored cake with a lemon layer, lime layer and an orange layer. The filling is a lemon curd and the frosting is orange.</p>
-            <figure class="recipes__figure">
-                <img class="recipes__img" src="../img/cake.webp" alt="Tri-color cake on a plate" width="400" height="400" loading="lazy">
-                <figcaption class="recipes__figcaption">Rainbow Citrus Cake</figcaption>
-            </figure>
+      <section class="recipes__head">
+        <h2 class="recipes__h2">Rainbow Citrus Cake</h2>
+        <p class="recipes__p">
+          Tri-colored cake with a lemon layer, lime layer and an orange layer.
+          The filling is a lemon curd and the frosting is orange.
+        </p>
+        <figure class="recipes__figure">
+          <img
+            class="recipes__img"
+            src="../img/cake.webp"
+            alt="Tri-color cake on a plate"
+            width="400"
+            height="400"
+            loading="lazy"
+          />
+          <figcaption class="recipes__figcaption">
+            Rainbow Citrus Cake
+          </figcaption>
+        </figure>
 
         <!-- here goes general tablet o7 -->
 
-        <table class="recipes__grid">
+        <table class="recipes__grid-more">
+          <thead>
             <tr>
               <th>Prep Time:</th>
               <th>Cook Time:</th>
               <th>Total Time:</th>
               <th>Servings:</th>
-              <th>Yield:</th>
             </tr>
+            <tr>
+              <th class="th2">Yield:</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>45 min</td>
               <td>1 hr 30 min</td>
               <td>2 hrs 45 min</td>
               <td>12</td>
-              <td>3-layer 9-inch cake</td>
             </tr>
-          </table>   
-          <p><a href="#nutrition">Jump to Nutrition Facts</a></p>  
-        </section>
+            <tr>
+              <td class="td2">3-layer 9-inch cake</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="jump">
+                <a href="#nutrition">Jump to Nutrition Facts</a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
 
-        <!-- here goes list of ingredients -->
+      <!-- here goes list of ingredients -->
 
-        <section class="recipes__prep" id="ingredients">
-            <div>
-                <h2 class="recipes__h2">Ingredients</h2>
-                <ul class="recipes__ul">
-                    <li class="recipes__li">3 ½ cups all-purpose flour</li>
-                    <li class="recipes__li">5 teaspoons baking powder</li>
-                    <li class="recipes__li">1 teaspoon salt</li>
-                    <li class="recipes__li">¾ cup shortening</li>
-                    <li class="recipes__li">2 ¼ cups white sugar</li>
-                    <li class="recipes__li">4 eggs, room temperature</li>
-                    <li class="recipes__li">1 ½ cups milk</li>
-                    <li class="recipes__li">2 teaspoons vanilla extract</li>
-                    <li class="recipes__li">2 teaspoons grated lemon zest</li>
-                    <li class="recipes__li">2 teaspoons grated orange zest</li>
-                    <li class="recipes__li">2 teaspoons grated lime zest</li>
-                    <li class="recipes__li">2 drops yellow food coloring</li>
-                    <li class="recipes__li">2 drops orange food coloring</li>
-                    <li class="recipes__li">2 drops green food coloring</li>
-                    <li class="recipes__li">1 recipe Lemon Custard Filling</li>
-                    <li class="recipes__li">1 recipe Orange Cream Frosting</li>
-                </ul>
-            </div>
-        </section>
+      <section class="recipes__prep" id="ingredients">
+        <div>
+          <h2 class="recipes__h2">Ingredients</h2>
+          <ul class="recipes__ul">
+            <li class="recipes__li">3 ½ cups all-purpose flour</li>
+            <li class="recipes__li">5 teaspoons baking powder</li>
+            <li class="recipes__li">1 teaspoon salt</li>
+            <li class="recipes__li">¾ cup shortening</li>
+            <li class="recipes__li">2 ¼ cups white sugar</li>
+            <li class="recipes__li">4 eggs, room temperature</li>
+            <li class="recipes__li">1 ½ cups milk</li>
+            <li class="recipes__li">2 teaspoons vanilla extract</li>
+            <li class="recipes__li">2 teaspoons grated lemon zest</li>
+            <li class="recipes__li">2 teaspoons grated orange zest</li>
+            <li class="recipes__li">2 teaspoons grated lime zest</li>
+            <li class="recipes__li">2 drops yellow food coloring</li>
+            <li class="recipes__li">2 drops orange food coloring</li>
+            <li class="recipes__li">2 drops green food coloring</li>
+            <li class="recipes__li">1 recipe Lemon Custard Filling</li>
+            <li class="recipes__li">1 recipe Orange Cream Frosting</li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- here goes step by step process description -->
+      <!-- here goes step by step process description -->
 
-        <section class="recipes__prep" id="steps">
-            <div>
-                <h2 class="recipes__h2">Directions</h2>
-                <ol class="recipes__ol-steps">
-                    <li class="recipes__li">Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 9-inch pans. Sift together the flour, baking powder, and salt. Set aside. </li>
-                    <li class="recipes__li">In a large bowl, cream together the shortening and sugar until light and fluffy. Beat in the eggs one at a time, mixing until each egg is incorporated; stir in the vanilla. Beat in the flour mixture alternately with the milk. Divide batter into 3 bowls. </li>
-                    <li class="recipes__li">In the first bowl, stir in lemon zest and yellow food coloring; pour into prepared pan. In the second bowl, stir in orange zest and orange food coloring; pour into second prepared pan. In the last bowl, stir in the lime zest and green food coloring; pour into third prepared pan. </li>
-                    <li class="recipes__li">Bake in the preheated oven until a toothpick inserted into the center of each cake layer comes out clean, about 30 minutes. Let cool in pan for 5 minutes, then turn out onto a wire rack and cool completely. </li>
-                    <li class="recipes__li">Assemble the cake: stack the layers together with the Lemon Filling in between the layers. Frost sides and top with Orange Cream Frosting. Refrigerate until serving. </li>
-                </ol>
-            </div>
-        </section>
+      <section class="recipes__prep" id="steps">
+        <div>
+          <h2 class="recipes__h2">Directions</h2>
+          <ol class="recipes__ol-steps">
+            <li class="recipes__li step">
+              Preheat oven to 350 degrees F (175 degrees C). Grease and flour
+              three 9-inch pans. Sift together the flour, baking powder, and
+              salt. Set aside.
+            </li>
+            <li class="recipes__li step">
+              In a large bowl, cream together the shortening and sugar until
+              light and fluffy. Beat in the eggs one at a time, mixing until
+              each egg is incorporated; stir in the vanilla. Beat in the flour
+              mixture alternately with the milk. Divide batter into 3 bowls.
+            </li>
+            <li class="recipes__li step">
+              In the first bowl, stir in lemon zest and yellow food coloring;
+              pour into prepared pan. In the second bowl, stir in orange zest
+              and orange food coloring; pour into second prepared pan. In the
+              last bowl, stir in the lime zest and green food coloring; pour
+              into third prepared pan.
+            </li>
+            <li class="recipes__li step">
+              Bake in the preheated oven until a toothpick inserted into the
+              center of each cake layer comes out clean, about 30 minutes. Let
+              cool in pan for 5 minutes, then turn out onto a wire rack and cool
+              completely.
+            </li>
+            <li class="recipes__li step">
+              Assemble the cake: stack the layers together with the Lemon
+              Filling in between the layers. Frost sides and top with Orange
+              Cream Frosting. Refrigerate until serving.
+            </li>
+          </ol>
+        </div>
+      </section>
 
-        <!-- here goes extra stuff, recommendations, adjustments, etc -->
+      <!-- here goes extra stuff, recommendations, adjustments, etc -->
 
-        <section class="recipes__prep" id="extra">
-            <div>
-                <h2 class="recipes__h2">Tips </h2>
-                <p class="recipes__p">Get the recipe for <a class="recipes__a" href="https://www.allrecipes.com/recipe/25622/lemon-custard-filling/" target="_blank">Lemon Custard Filling</a>. </p>
-                <p class="recipes__p">Get the recipe for <a class="recipes__a" href="https://www.allrecipes.com/recipe/25623/orange-cream-frosting/" target="_blank">Orange Cream Frosting</a>. </p>
-            </div>
-        </section>
-        <section class="recipes__prep" id="nutrition">
-            <div>
-                <h2 class="recipes__h2">Nutrition Facts <span class="tiny-text">(per serving)</span></h2>
-                <table class="recipes__grid">
-                    <tr>
-                    <th>Calories</th>
-                    <th>Fat</th>
-                    <th>Carbs</th>
-                    <th>Proteins</th>
-                    </tr>
-                    <tr>
-                    <td>434</td>
-                    <td>15g</td>
-                    <td>68g</td>
-                    <td>7g</td>
-                    </tr>
-                </table> 
-            </div>            
-            </section>
+      <section class="recipes__prep" id="extra">
+        <div>
+          <h2 class="recipes__h2">Tips</h2>
+          <p class="recipes__p">
+            Get the recipe for
+            <a
+              class="recipes__a"
+              href="https://www.allrecipes.com/recipe/25622/lemon-custard-filling/"
+              target="_blank"
+              >Lemon Custard Filling</a
+            >.
+          </p>
+          <p class="recipes__p">
+            Get the recipe for
+            <a
+              class="recipes__a"
+              href="https://www.allrecipes.com/recipe/25623/orange-cream-frosting/"
+              target="_blank"
+              >Orange Cream Frosting</a
+            >.
+          </p>
+        </div>
+      </section>
+      <section class="recipes__prep" id="nutrition">
+        <div>
+          <h2 class="recipes__h2">
+            Nutrition Facts <span class="tiny-text">(per serving)</span>
+          </h2>
+          <table class="recipes__grid">
+            <tr>
+              <th>Calories</th>
+              <th>Fat</th>
+              <th>Carbs</th>
+              <th>Proteins</th>
+            </tr>
+            <tr>
+              <td>434</td>
+              <td>15g</td>
+              <td>68g</td>
+              <td>7g</td>
+            </tr>
+          </table>
+        </div>
+      </section>
 
-            <a href="#">Back to Top</a>
-
+      <a class="btn" href="#">Back to Top</a>
     </main>
     <footer>
-        <p>Put together by <a class="github-link" href="https://github.com/DarkestofTimes" target="_blank">DarkestofTimes</a>.</p>
-        <p>Content shamelessly copied from <a class="allrecipes" href="https://www.allrecipes.com/" target="_blank">Allrecipes.com</a>.</p>
+      <p>
+        Put together by
+        <a
+          class="github-link"
+          href="https://github.com/DarkestofTimes"
+          target="_blank"
+          >DarkestofTimes</a
+        >.
+      </p>
+      <p>
+        Content shamelessly copied from
+        <a class="allrecipes" href="https://www.allrecipes.com/" target="_blank"
+          >Allrecipes.com</a
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
